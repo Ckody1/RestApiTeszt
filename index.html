@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Könyvek</title>
+    <link rel="stylesheet" href="stilus.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="ajax.js"></script>
+  </head>
+  <body>
+    <h1>Rest Api teszt</h1>
+    <div>
+      <label for="keres">Keresés:</label>
+      <input
+        type="text"
+        id="keres"
+        name="keres"
+        placeholder="Keresés..."
+      /><br />
+      <button id="rendezes">csökkenő</button>
+    </div>
+
+    <div id="urlap">
+      <form>
+        <input
+          type="text"
+          id="szerzo"
+          name="szerzo"
+          placeholder="Szerző"
+        /><br />
+
+        <input type="text" id="cim" name="cim" placeholder="Cím" /><br />
+
+        <input type="text" id="ar" name="ar" placeholder="Ár" /><br />
+
+        <input type="text" id="tipus" name="tipus" placeholder="Típus" /><br />
+      </form>
+      <button id="ujadat">Új adat beszúrása</button><br />
+
+      <form>
+        <input type="text" id="adatid" name="adatid" placeholder="ID" /><br />
+      </form>
+      <button id="modosit">Adat módosítása</button>
+      <button id="torol">elem törlése</button>
+    </div>
+
+    <div class="megjelenit"></div>
+  </body>
+</html>
